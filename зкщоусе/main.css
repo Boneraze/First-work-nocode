@@ -1,0 +1,226 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Bebas Neue Regular;
+    display: flex;
+}
+
+.menu {
+    transition: 0.3s;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    height: 100vh;
+    width: 0;
+    background-color: rgba(15,44,140, 0.95);
+    z-index: 2;
+    overflow-x: hidden;
+}
+
+.leftbar {
+    width: 25%;
+    height: 100vh;
+    text-align: center;
+    padding: 3vw;
+    box-sizing: border-box;
+}
+
+.leftbar-title {
+    display: block;
+    font-size: 4.5vw;
+    color: #c1c1c1;
+    transform: translateY(10vw);
+}
+
+.content {
+    width: 75%;
+    height: 100vh;
+    color: white;
+}
+
+.focused-content {
+    width: 100%;
+    height: 70vh;
+    background-image: url('cities-nyc_optimized.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fc-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+    padding-top: 2.5vw;
+    padding-left: 4.8vw;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.fcc-title {
+    display: block;
+    font-size: 8vw;
+    letter-spacing: 0.5vw;
+}
+
+.fcc-info {
+    display: block;
+    font-size: 1.2vw;
+    position: absolute;
+    right: 3vw;
+    bottom: 4.5vw;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.2vw;
+}
+
+.content-line {
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(0,0,0, 0.97);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.project-app {
+    width: 12vw;
+    height: 12vw;
+    background-color: black;
+    margin: 1vw;
+}
+
+/*---Burger button---*/
+.super-button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.burger-line,
+.burger-line::before,
+.burger-line::after {
+    position: absolute;
+    top: 50%; margin-top: -3px;
+    left: 50%; margin-left: -23px;
+    width: 46px;
+    height: 6px;
+    background-color: #c1c1c1;
+    transition: 0.3s;
+}
+
+.burger-line::before, 
+.burger-line::after {
+    content: '';
+}
+
+.burger-line::before {
+    transform: translateY(-14px);
+}
+
+.burger-line::after {
+    transform: translateY(14px);
+}
+
+/*class for adding*/
+.burger-act , .burger-act::before , .burger-act::after {
+    background-color: white;
+}
+
+.burger-act , .burger-act::before {
+    transform: rotate(-90deg);
+}
+
+.burger-act::before , .burger-act::after {
+    transform: translateY(0);
+}
+
+.burger-act::after {
+    transform: rotate(90deg);
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+.changeWidth {
+    width: 100%;
+}
+/*/*/
+/*---/Burger button/---*/
+
+
+
+/*---Media---*/
+@media (max-width: 1024px) {
+    .fcc-info {
+        font-size: 2.3vw;
+    }
+
+    br {
+        display: none;
+    }
+
+    .super-button {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+
+    .super-button {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .burger-line,
+    .burger-line::before,
+    .burger-line::after {
+        position: absolute;
+        top: 50%; margin-top: -1.5px;
+        left: 50%; margin-left: -11.5px;
+        width: 23px;
+        height: 3px;
+        transition: 0.3s;
+    }
+
+    .burger-line::before {
+        transform: translateY(-7px);
+    }
+    
+    .burger-line::after {
+        transform: translateY(7px);
+    }
+
+    .burger-act , .burger-act::before {
+        transform: rotate(-90deg);
+    }
+    
+    .burger-act::before , .burger-act::after {
+        transform: translateY(0);
+    }
+    
+    .burger-act::after {
+        transform: rotate(90deg);
+    }
+    
+    .rotated {
+        transform: rotate(45deg);
+    }
+}
+
+@media (max-width: 512px) {
+    .leftbar {
+        width: 15%;
+        padding: 0;
+    }
+
+    .super-button {
+        margin: auto;
+    }
+
+    .content {
+        width: 85%;
+    }
+}
+/*---/Media/---*/
