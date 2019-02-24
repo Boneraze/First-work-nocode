@@ -1,0 +1,89 @@
+/*---Media---*/
+@media (max-width: 1024px) {
+    .fcc-info {
+        font-size: 2.3vw;
+    }
+
+    .navbar li {
+        font-size: 6vw;
+    }
+
+    br {
+        display: none;
+    }
+
+    .super-button {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+
+    .super-button {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .burger-line,
+    .burger-line::before,
+    .burger-line::after {
+        position: absolute;
+        top: 50%; margin-top: -1.5px;
+        left: 50%; margin-left: -11.5px;
+        width: 23px;
+        height: 3px;
+        transition: 0.3s;
+    }
+
+    .burger-line::before {
+        transform: translateY(-7px);
+    }
+    
+    .burger-line::after {
+        transform: translateY(7px);
+    }
+
+    .burger-act , .burger-act::before {
+        transform: rotate(-90deg);
+    }
+    
+    .burger-act::before , .burger-act::after {
+        transform: translateY(0);
+    }
+    
+    .burger-act::after {
+        transform: rotate(90deg);
+    }
+    
+    .rotated {
+        transform: rotate(45deg);
+    }
+}
+
+@media (max-width: 512px) {
+    .leftbar {
+        width: 15%;
+        padding: 0;
+    }
+
+    .super-button {
+        margin: auto;
+    }
+
+    .content {
+        width: 85%;
+    }
+
+    .navbar li:nth-child(1) {
+        margin-left: 0;
+    }
+    
+    .navbar li:nth-child(2) {
+        margin-left: 0;
+    }
+    
+    .navbar li:nth-child(3) {
+        margin-left: 0;
+    }
+}
+/*---/Media/---*/
