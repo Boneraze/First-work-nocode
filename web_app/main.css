@@ -9,8 +9,8 @@ body {
 .menu {
     transition: 0.3s;
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    width: 100%;
+    top: 0; left: 0; right: 0; bottom: 0;2
+    width: 0;
     height: 100vh;
     background-color: rgba(8,35,117, 0.95);
     z-index: 2;
